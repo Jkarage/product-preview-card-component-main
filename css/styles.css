@@ -89,6 +89,9 @@ body {
     .card--image {
         height: 100%;
     }
+    .btn {
+        margin-top: 2rem;
+    }
 }
 
 .attribution {
