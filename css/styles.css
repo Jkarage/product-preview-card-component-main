@@ -1,0 +1,100 @@
+:root {
+    --color-primary: hsl(158, 36%, 37%);
+    --color-secondary: hsl(30, 38%, 92%);
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: Montserrat,Fraunces;
+    background-color: var(--color-secondary);
+    margin-top: 2rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+.card--image {
+    width: 100%;
+}
+
+.card--header {
+    font-size: 3.4rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.card__body {
+    padding: 0 3rem;
+    padding-bottom: 2rem;
+    margin: 1rem 0;
+}
+
+.card--text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.card--tag {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 1;
+}
+
+.current-price {
+    color: var(--color-primary);
+    font-size: 4rem;
+    font-family: Fraunces;
+    font-weight: 700;
+    margin-right: 1.5rem;
+}
+
+.previous-price {
+    text-decoration: line-through;
+    position: relative;
+    top: -1rem;
+}
+
+.btn {
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+    font-weight: 700;
+    color: #fff;
+}
+.cart {
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: 650px){
+    body {
+        padding: 8rem 15rem;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        margin: 0 20vw;
+        width: 50vw;
+    }
+    .card--image {
+        height: 100%;
+    }
+}
+
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
